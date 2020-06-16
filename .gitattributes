@@ -1,6 +1,5 @@
 ## Handle line endings automatically for files detected as text and leave all files detected as binary untouched
 * text=auto
-
 ## These files are text and should be normalized (Convert crlf => lf)
 *.php text
 *.css text
@@ -12,7 +11,6 @@
 *.ini text
 *.inc text
 .htaccess text
-
 ## These files are binary and should be left untouched
 # (binary is a macro for -text -diff)
 *.png binary
@@ -33,7 +31,6 @@
 *.pdf binary
 *.doc binary
 *.docx binary
-
 ## Exclude testing files from distribution
 /.github export-ignore
 /_tests/Unit/App export-ignore
@@ -47,3 +44,4 @@
 .php_cs.dist export-ignore
 phpcs.xml.dist export-ignore
 phpunit.xml.dist export-ignore
+*.mmdb filter=lfs diff=lfs merge=lfs -text
