@@ -1,0 +1,43 @@
+_install/data/caches/smarty_cache/*
+_install/data/caches/smarty_compile/*
+data/*
+_constants.php
+_protected/app/configs/config.ini
+_protected/app/system/core/assets/cron/_delay/
+_protected/data/tmp/*
+_protected/data/log/pH7log/*
+_protected/data/backup/*
+_protected/data/cache/*
+_protected/vendor/*
+composer.phar
+phpunit.phar
+.php_cs
+.php_cs.cache
+*.log
+*.tmp
+
+# PHPUnit Coverage folder
+coverage
+
+# PHPStorm IDE folder
+.idea
+
+## Gettext ##
+*.mo
+
+## OS ##
+
+# Linux
+*~
+*.swp
+# KDE
+.directory
+
+# Windows
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Mac OS
+.DS_Store*
+._*
